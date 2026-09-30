@@ -1,21 +1,50 @@
+
+
+
 export default function Hero() {
   return (
-    <section className="min-h-[500px] flex items-center justify-center bg-gray-100 px-6">
-      <div className="max-w-3xl text-center">
+    <section className="relative min-h-[480px] overflow-hidden bg-slate-950 px-6 flex items-center justify-center">
 
-        <h1 className="text-5xl font-bold text-gray-900 mb-6">
-          Build Your Future With Us
+      {/* Background Glow */}
+      <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[450px] h-[450px] bg-blue-600/20 rounded-full blur-3xl" />
+
+      <div className="relative z-10 max-w-4xl text-center">
+
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-2 mb-5 rounded-full border border-white/10 bg-white/5 text-sm text-gray-300 backdrop-blur">
+          <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+          Build something amazing
+        </div>
+
+        {/* Title */}
+        <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-white leading-tight mb-5">
+          Build Your
+          <span className="block bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
+            Future With Us
+          </span>
         </h1>
 
-        <p className="text-lg text-gray-600 mb-8">
-          Discover amazing products and create a better experience.
+        {/* Description */}
+        <p className="max-w-2xl mx-auto text-lg leading-7 text-gray-400 mb-8">
+          Discover amazing products, build better experiences,
+          and turn your ideas into something people love.
         </p>
 
-        <button className="bg-black text-white px-8 py-3 rounded-xl hover:bg-gray-800">
-          Get Started
-        </button>
+        {/* Buttons */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+
+          <button className="px-8 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg shadow-blue-600/20">
+            Get Started
+          </button>
+
+          <button className="px-8 py-3 rounded-xl border border-white/10 bg-white/5 text-white font-semibold hover:bg-blue-500/10 transition-all duration-300 backdrop-blur">
+            Explore Products
+          </button>
+
+        </div>
 
       </div>
     </section>
   );
 }
+

@@ -1,5 +1,5 @@
 # My Shope — Next.js E-commerce
-
+![my stor Preview](public/images//my%20stor-preview.png)
 A modern e-commerce website built with **Next.js**, **React**, **JavaScript**, and **Tailwind CSS**.
 
 This project was created as a learning and portfolio project to practice building a complete web application with Next.js App Router.
