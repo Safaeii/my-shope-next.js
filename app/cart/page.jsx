@@ -1,8 +1,9 @@
 "use client";
-
+import Link from "next/link";
 import { useContext } from "react";
 import Image from "next/image";
 import CartContext from "../../context/CartContext";
+
 
 export default function Cart() {
   const { cart ,removeFromCart } = useContext(CartContext);
@@ -80,9 +81,12 @@ export default function Cart() {
               </span>
             </div>
 
-            <button className="w-full bg-green-500 text-white py-3 rounded-xl font-bold hover:bg-green-600 transition">
-              تسویه حساب
-            </button>
+           <Link
+  href="/checkout"
+  className="block w-full bg-green-500 text-white py-3 rounded-xl font-bold text-center hover:bg-green-600 transition"
+>
+  تسویه حساب
+</Link>
           </div>
         </>
       )}
